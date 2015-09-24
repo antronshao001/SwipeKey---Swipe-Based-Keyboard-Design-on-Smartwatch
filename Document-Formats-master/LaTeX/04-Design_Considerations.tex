@@ -1,0 +1,23 @@
+\section{Design Considerations}
+
+In order to create guidelines for our design, we need to define the qualities of a keyboard optimized for smartwatches. We suggest that an optimal smartwatch keyboard must satisfy 3 requirements:
+
+    \begin{itemize}
+    \item[1.]Low input error:\newline
+    Many studies have shown the trade-off between text entry speed and accuracy \cite{speed-accuracy-trade-off,trade-off-in-aim-target}. Slow text entry speeds could result from several factors. For example, users may find a keyboard layout confusing and may need time searching for the characters they want to type. High error rates could rise from users typing out characters by accident due to small button sizes and difficult input methods \cite{target-size-for-thumb}. A high input error rate not only reduces the usability, but also makes the user slow down in an attempt to avoid mistakes and reach an acceptable error rate. Therefore, we need a layout where the users will not have difficulty searching for specific characters. The keyboard input method should also not contain any complicated motions.
+    \item[2.]Short reaction time for each character:\newline
+    The speed of text entry is inversely proportional to the reaction time of typing each character. If the user can react quickly then, the overall typing speed will increase. Quick reaction depends on the ease of finding where each character is located and the fluency of the input method. Fluency comes from minimizing how much time it takes for the users to type a single character and then go on to the next character.
+    \item[3.]Simple and consistent design:\newline
+    Users will find a layout design easy to use if the layout is simple and consistent. Simple designs also reduce the possibility of making typing mistakes.
+    \end{itemize}
+    
+We have designed SwipeKey based on these requirements. SwipeKey is a type of keyboard that uses swipe direction to create multiple identifications for a single button. The keyboard design is consistent; every button uses the same pattern. We consider only the swipe direction of each button adhere to vertical and horizontal symmetry for usability and affordance reasons \cite{symmetry-for-design,symmetry-affordance}.
+SwipeKey satisfies our requirements because: 
+    
+    \begin{itemize}
+    \item[1.]It makes the effective button size N times larger, where N is the number of keys for each button. N could range from 2 to more than 10. With large enough value for N, we can make the effective button size large enough for low error input.
+    \item[2.]SwipeKey requires one single stroke for every character.
+    \item[3.]SwipeKey has an intuitive, consistent and simple design for each button.
+    \end{itemize}
+    
+After going through the 3 design considerations, we need to actually start with designing the keyboard layout for SwipeKey. There are 5 parameters we need to address in our design space: button shape, button size, number of swipes per button, button layout, and character arrangement. We then explore the design space through a series of user studies and discussions.
